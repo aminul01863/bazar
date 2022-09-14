@@ -6,11 +6,15 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 function App() {
   return (
-    <div>
-      <Header></Header>
-      <Home></Home>
-      <Product></Product>
-    </div>
+    <>
+      <div className="container-fluid">
+        <Header></Header>
+        <Home></Home>
+      </div>
+      <div className="container">
+        <Product></Product>
+      </div>
+    </>
   );
 }
 

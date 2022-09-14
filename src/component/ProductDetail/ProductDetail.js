@@ -11,51 +11,35 @@ const ProductDetail = (props) => {
   console.log(props.product);
   const { Picture, ProductTitle, SalePrice, RegularPrice } = props.product;
   return (
-    <div className="product-container">
-      <div className="product-item">
-        <div className="hard-container">
-          <div>
-            <p>25% off</p>
-          </div>
-          <div className="mx-auto">
-            <FontAwesomeIcon icon={faHeart} />
-          </div>
+    <div className="card shadow-sm align-items-center p-3 my-4 mx-2">
+      {/* Discount */}
+      <div className="d-flex p-2 justify-content-between align-items-center w-100">
+        <p className="m-0">25% off</p>
+        <FontAwesomeIcon icon={faHeart} />
+      </div>
+      {/* Product image */}
+      <div className="product-img">
+        <img src={Picture} alt="" />
+      </div>
+
+      {/* product details */}
+      <div className="mt-3 w-100">
+        <h5 className="fw-bold">{ProductTitle}</h5>
+        <div className="star-icon-container">
+          <FontAwesomeIcon icon={faStar} />
+          <FontAwesomeIcon icon={faStar} />
+          <FontAwesomeIcon icon={faStar} />
+          <FontAwesomeIcon icon={faStar} />
+          <FontAwesomeIcon icon={faStar} />
         </div>
-        <div className="product-img">
-          <img src={Picture} alt="" />
-        </div>
-        <div className="mt-3">
-          <p>{ProductTitle}</p>
-          <div className="star-icon-container ">
-            <div>
-              <FontAwesomeIcon icon={faStar} />
-            </div>
-            <div>
-              <FontAwesomeIcon icon={faStar} />
-            </div>
-            <div>
-              <FontAwesomeIcon icon={faStar} />
-            </div>
-            <div>
-              <FontAwesomeIcon icon={faStar} />
-            </div>
-            <div>
-              <FontAwesomeIcon icon={faStar} />
-            </div>
+        <div className="d-flex justify-content-between align-items-center mt-1 ">
+          <div className="d-flex justify-content-between align-items-center gap-2">
+            <span>${SalePrice}</span>
+            <span className="text-decoration-line-through">${RegularPrice}</span>
           </div>
-          <div className="price-container mt-1 ">
-            <div>
-              <p className="seal-price">$ {SalePrice}</p>
-            </div>
-            <div className="mx-3">
-              <p>$ {RegularPrice}</p>
-            </div>
-            <div>
-              <button className="plus-btn ">
-                <FontAwesomeIcon icon={faPlus} />
-              </button>
-            </div>
-          </div>
+          <button className="plus-btn ">
+            <FontAwesomeIcon icon={faPlus} />
+          </button>
         </div>
       </div>
     </div>

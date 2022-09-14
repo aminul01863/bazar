@@ -1,115 +1,38 @@
 import React from "react";
 import "./Header.css";
-import {
-  Button,
-  Container,
-  Form,
-  InputGroup,
-  Nav,
-  Navbar,
-  NavDropdown,
-} from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping, faUser } from "@fortawesome/free-solid-svg-icons";
+import MegaMenu from "./MegaMenu";
 
 const Header = () => {
   return (
-    <div className="bg-white">
-      <div className="header-container ">
-        <h2 className="name">Bazar</h2>
-        <div className="search-container">
-          <InputGroup className="mb-3 h-50">
-            <Form.Control placeholder="Searching Product" />
-            <Button variant="outline-secondary" id="button-addon2">
-              All category
-            </Button>
-          </InputGroup>
-        </div>
-
-        <div className="icon-container">
-          <FontAwesomeIcon icon={faUser} />
-        </div>
-        <div>
-          <FontAwesomeIcon icon={faCartShopping} />
+    <nav className="navbar bg-tansparent">
+      <div className="container">
+        <a className="navbar-brand fw-bold fs-2" href="#home">
+          Bazar
+        </a>
+        <div className="d-flex align-items-center gap-4">
+          <form className="d-flex" role="search">
+            <input
+              className="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button className="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+          <div className="d-flex align-items-center gap-4">
+            <FontAwesomeIcon icon={faCartShopping} />
+            <FontAwesomeIcon icon={faUser} />
+          </div>
         </div>
       </div>
-
-      <Navbar expand="lg">
-        <Container className="gap-5">
-          <Navbar.Brand href="#home">Categories</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto gap-5 ">
-              <NavDropdown title="Home" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Something
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-              </NavDropdown>
-
-              <NavDropdown title="Mega Menu" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Something
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-              </NavDropdown>
-
-              <NavDropdown title="Full Screen Menu" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Something
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-              </NavDropdown>
-
-              <NavDropdown title="Pages" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Something
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-              </NavDropdown>
-
-              <NavDropdown title="User Account" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Something
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-              </NavDropdown>
-
-              <NavDropdown title="Vendor Account" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Something
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-              </NavDropdown>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-    </div>
+      <div className="my-2 container">
+        <MegaMenu />
+      </div>
+    </nav>
   );
 };
 
