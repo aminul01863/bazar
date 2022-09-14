@@ -1,0 +1,25 @@
+.header-container {
+    display: flex;
+    margin: 10px;
+    margin-left: 80px;
+    align-items: center;
+}
+
+.name {
+    color: rgba(70, 6, 247, 0.864);
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    height: 40px;
+    margin-left: 110px;
+    margin-right: 100px;
+
+}
+
+.icon-container {
+    margin-right: 70px;
+}

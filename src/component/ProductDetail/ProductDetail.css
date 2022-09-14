@@ -1,0 +1,19 @@
+.product-item {
+    margin-left: 70px;
+
+}
+
+.first-seller {}
+
+.product-info {
+    margin-top: 20px;
+}
+
+.product-item img {
+    height: 167px;
+    width: 156px;
+}
+
+.sale-price {
+    color: red;
+}
