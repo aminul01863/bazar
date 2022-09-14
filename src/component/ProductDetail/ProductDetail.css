@@ -1,19 +1,65 @@
-.product-item {
+/* .product-item {
     margin-left: 70px;
 
+} */
+
+/* .first-seller {
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+} */
+
+.hard-container {
+    display: flex;
 }
 
-.first-seller {}
+.hart-icon {
+    text-align: end;
+}
 
-.product-info {
+/* .product-info {
     margin-top: 20px;
-}
+} */
 
-.product-item img {
+/* .product-item img {
     height: 167px;
     width: 156px;
+} */
+
+.star-icon-container {
+    color: #FAAF00;
+    display: flex;
+
 }
 
-.sale-price {
+.price-container {
+    display: flex;
+}
+
+.seal-price {
     color: red;
+}
+
+.plus-btn {
+    border: 1px solid #D23F57;
+    border-radius: 5px;
+    color: #D23F57;
+    text-align: end;
+}
+
+.plus-btn:hover {
+    background-color: #e04f69;
+    color: #3b2c2c;
+}
+
+.product-img img {
+
+    width: 131px;
+
+}
+
+.product-container {
+    background-color: #F3F5F9;
+    ;
 }

@@ -14,7 +14,7 @@ import { faCartShopping, faUser } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   return (
-    <div>
+    <div className="bg-white">
       <div className="header-container ">
         <h2 className="name">Bazar</h2>
         <div className="search-container">
@@ -34,7 +34,7 @@ const Header = () => {
         </div>
       </div>
 
-      <Navbar bg="red" expand="lg">
+      <Navbar expand="lg">
         <Container className="gap-5">
           <Navbar.Brand href="#home">Categories</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
