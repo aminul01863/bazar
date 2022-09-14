@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import "./Product.css";
 import ProductDetail from "../ProductDetail/ProductDetail";
 import Slider from "react-slick";
+import Cars from "../Cars/Cars";
+import CarseName from "../Cars/CarseName";
 const Product = () => {
   const settings = {
     dots: true,
@@ -54,6 +56,16 @@ const Product = () => {
           <ProductDetail product={product}></ProductDetail>
         ))}
       </Slider>
+      <div className="row mt-5">
+        <div className="col-md-2">
+          <CarseName></CarseName>
+        </div>
+        <div className="container col-md-10 ">
+          {product.map((product) => (
+            <Cars product={product}></Cars>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
