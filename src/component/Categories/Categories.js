@@ -11,43 +11,64 @@ import Camera from "../../image/camera.png";
 const Categories = () => {
   return (
     <div>
-      <div class="container align-items-center justify-content-center">
+      <div class="container ">
         <p className="fs-3 fw-bold ">Categories</p>
-        <div class="row my-5 ">
+        <div class="row row-cols-2 row-cols-lg-5 g-3 g-lg-4">
           <div class="col">
-            <img src={Fashion} alt="" />
-            Fashion
+            <div class="p-3 border-0 rounded bg-light">
+              <img src={Fashion} alt="" />
+              Fashion
+            </div>
           </div>
           <div class="col">
-            <img src={Care} alt="" />
-            Car
+            <div class="p-3 border-0 rounded bg-light">
+              <img src={Care} alt="" />
+              Car
+            </div>
           </div>
           <div class="col">
-            <img src={Mobile} alt="" />
-            Mobile
+            <div class="p-3 border-0 rounded bg-light">
+              <img src={Mobile} alt="" />
+              Mobile
+            </div>
           </div>
           <div class="col">
-            <img src={Laptop} alt="" /> Laptop
+            <div class="p-3 border-0 rounded bg-light">
+              <img src={Laptop} alt="" /> Laptop
+            </div>
           </div>
           <div class="col">
-            <img src={Desktop} alt="" /> Desktop
-          </div>
-        </div>
-        <div class="row d-flex align-items-center">
-          <div class="col">
-            <img src={Tablet} alt="" /> Tablet
+            <div class="p-3 border-0 rounded bg-light">
+              <img src={Desktop} alt="" /> Desktop
+            </div>
           </div>
           <div class="col">
-            <img src={Fashion} alt="" /> Fashion
+            <div class="p-3 border-0 rounded bg-light">
+              <img src={Tablet} alt="" /> Tablet
+            </div>
           </div>
           <div class="col">
-            <img src={Electronics} alt="" /> Electronics
+            <div class="p-3 border-0 rounded bg-light">
+              {" "}
+              <img src={Fashion} alt="" /> Fashion
+            </div>
           </div>
           <div class="col">
-            <img src={Furniture} alt="" /> Furniture
+            <div class="p-3 border-0 rounded bg-light">
+              {" "}
+              <img src={Furniture} alt="" /> Furniture
+            </div>
           </div>
           <div class="col">
-            <img src={Camera} alt="" /> Camera
+            <div class="p-3 border-0 rounded bg-light">
+              {" "}
+              <img src={Camera} alt="" /> Camera
+            </div>
+          </div>
+          <div class="col">
+            <div class="p-3 border-0 rounded bg-light">
+              <img src={Electronics} alt="" /> Electronics
+            </div>
           </div>
         </div>
       </div>

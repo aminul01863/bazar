@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Footer from "./component/Footer/Footer";
 import Categories from "./component/Categories/Categories";
+import Review from "./component/Review/Review";
 function App() {
   return (
     <>
@@ -16,6 +17,7 @@ function App() {
       <div className="container">
         <Product></Product>
         <Categories></Categories>
+        <Review></Review>
       </div>
 
       <Footer></Footer>
