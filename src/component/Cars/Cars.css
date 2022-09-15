@@ -2,3 +2,17 @@
     height: 333px;
     width: 500px;
 }
+
+.carseName a {
+    text-decoration: none;
+    margin-bottom: 20px;
+    background-color: #F3F5F9;
+    color: black;
+    padding: 7px;
+    border-radius: 5px;
+    box-shadow: 2px 2px #c0bcbc;
+}
+
+.carseName a:hover {
+    color: #e33f5d;
+}

@@ -1,14 +1,16 @@
 import React from "react";
-
+import "./Cars.css";
 const CarseName = () => {
   return (
-    <div className="m-4">
-      <ul>Ferrari</ul>
-      <ul>Tesla</ul>
-      <ul>Bmw</ul>
-      <ul>Toyota</ul>
-      <ul>Mini</ul>
-      <ul>Ford</ul>
+    <div className="my-4 gap-1   ">
+      <div className="carseName  row ">
+        <a href="#Ferrari">Ferrari</a>
+        <a href="#Ferrari">Tesla</a>
+        <a href="#Ferrari">Bmw</a>
+        <a href="#Ferrari">Toyota</a>
+        <a href="#Ferrari">Mini</a>
+        <a href="#Ferrari">Ford</a>
+      </div>
     </div>
   );
 };

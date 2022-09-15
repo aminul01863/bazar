@@ -60,9 +60,12 @@ const Product = () => {
         <div className="col-md-2">
           <CarseName></CarseName>
         </div>
-        <div className="container col-md-10 ">
+        <div className="row col-md-10 ">
+          <p className="first-product-name ">Cars</p>
           {product.map((product) => (
-            <Cars product={product}></Cars>
+            <div className="col-4">
+              <Cars product={product}></Cars>
+            </div>
           ))}
         </div>
       </div>

@@ -4,6 +4,8 @@ import Home from "./component/Home/Home";
 import Product from "./component/Product/Product";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Footer from "./component/Footer/Footer";
+import Categories from "./component/Categories/Categories";
 function App() {
   return (
     <>
@@ -13,7 +15,10 @@ function App() {
       </div>
       <div className="container">
         <Product></Product>
+        <Categories></Categories>
       </div>
+
+      <Footer></Footer>
     </>
   );
 }
